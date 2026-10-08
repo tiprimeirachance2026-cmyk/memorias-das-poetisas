@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Estrela de xilogravura">
+  <g fill="#181410">
+    <path d="M60 4 70 40 106 30 80 56 116 66 80 76 106 102 70 92 60 116 50 92 14 102 40 76 4 66 40 56 14 30 50 40Z"/>
+  </g>
+  <circle cx="60" cy="60" r="17" fill="#e0a02b" stroke="#181410" stroke-width="4"/>
+  <circle cx="60" cy="60" r="5" fill="#181410"/>
+</svg>

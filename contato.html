@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contato — Memórias das Poetisas da Literatura de Cordel. Contribua com informações sobre poetisas do cordel brasileiro.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#181410">
+  <title>Contato — Memórias das Poetisas da Literatura de Cordel</title>
+  <link rel="icon" href="elementos/estrela.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__text">
+          <span class="brand__title">Memórias das Poetisas</span>
+          <span class="brand__descriptor">da Literatura de Cordel</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" data-site-nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="biografias.html">Biografias</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO DA PÁGINA ================= -->
+    <section class="page-hero">
+      <div class="shell page-hero__inner">
+        <div>
+          <span class="eyebrow">Fale conosco</span>
+          <h1>Contato</h1>
+        </div>
+        <p>
+          Quer contribuir com informações sobre uma poetisa, uma capa ou um
+          folheto? Este é o canal do projeto.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section">
+      <div class="shell contact-layout">
+
+        <!-- Coluna esquerda: informações -->
+        <div class="contact-info">
+          <div class="contact-note">
+            <h3>Canal institucional</h3>
+            <p>O endereço oficial de recebimento está em validação pela
+               instituição. Use o formulário ao lado para preparar sua mensagem.</p>
+          </div>
+
+          <div class="contact-note">
+            <h3>UFPB — João Pessoa</h3>
+            <p>Universidade Federal da Paraíba · João Pessoa, Paraíba</p>
+          </div>
+
+          <div class="contact-note">
+            <h3>PPGCi</h3>
+            <p>Programa de Pós-Graduação em Ciência da Informação</p>
+          </div>
+
+          <div class="contact-note">
+            <h3>Contribuições para o acervo</h3>
+            <p>Se você tem fotos, biografias ou capas de folhetos de poetisas,
+               indique-as — o material será verificado antes da publicação.</p>
+          </div>
+        </div>
+
+        <!-- Coluna direita: formulário -->
+        <div class="form-card">
+          <h2>Enviar mensagem</h2>
+
+          <form data-contact-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contato-nome">Nome</label>
+                <input type="text" id="contato-nome" name="nome" required maxlength="120">
+              </div>
+              <div class="form-group">
+                <label for="contato-email">E-mail</label>
+                <input type="email" id="contato-email" name="email" required maxlength="160">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contato-mensagem">Mensagem</label>
+              <textarea id="contato-mensagem" name="mensagem" required maxlength="2000"></textarea>
+            </div>
+
+            <p class="form-error" data-contact-error role="alert"></p>
+
+            <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+          </form>
+
+          <div class="state-panel" data-contact-ok hidden>
+            <h3>Mensagem registrada</h3>
+            <p>Obrigado! Seu texto ficou salvo neste navegador. O envio por e-mail
+               será ativado assim que o canal institucional for confirmado.</p>
+            <p style="margin-top: 1rem;">
+              <button type="button" class="btn btn-sm" data-contact-reset>Escrever outra</button>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= APOIO ================= -->
+    <section class="supporters" aria-labelledby="titulo-apoio">
+      <div class="shell">
+        <div class="supporters__head">
+          <h2 id="titulo-apoio">Apoio e realização</h2>
+          <span class="supporters__badge">Parceiros</span>
+        </div>
+        <div class="supporters__grid">
+          <div class="supporter">
+            <img src="logos/CNPq.png" alt="CNPq" title="Conselho Nacional de Desenvolvimento Científico e Tecnológico">
+          </div>
+          <div class="supporter">
+            <img src="logos/DCI.png" alt="DCI" title="Departamento de Ciência da Informação">
+          </div>
+          <div class="supporter">
+            <img src="logos/PPGCI.png" alt="PPGCI" title="Programa de Pós-Graduação em Ciência da Informação">
+          </div>
+          <div class="supporter">
+            <img src="logos/ACVPB.png" alt="ACVPB" title="Academia de Cordel do Vale do Paraíba">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__title">Memórias das Poetisas</span>
+          <span class="brand__descriptor">da Literatura de Cordel</span>
+          <p>Acervo digital de referência sobre a produção poética feminina
+             na literatura de cordel brasileira.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="biografias.html">Biografias</a>
+          <a href="contato.html">Contato</a>
+          <a href="admin.html">Painel adm</a>
+        </nav>
+      </div>
+
+      <div class="credits">
+        <div class="credits__label">Créditos</div>
+        <div class="credits__list">
+          <a class="credit" href="https://portsamuellmsa.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <strong>Samuel Lucas</strong>
+            <small>Desenvolvimento</small>
+          </a>
+          <a class="credit" href="https://miguel-fernandes-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <strong>Miguel Fernandes</strong>
+            <small>Desenvolvimento</small>
+          </a>
+          <span class="credit credit--highlight">
+            <strong>Jackson</strong>
+            <small>Design, ilustração e tipografia</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</span>
+        <span>Projeto acadêmico da UFPB · PPGCi</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biografias das poetisas da literatura de cordel — foto, vida, obra e capas dos folhetos.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#181410">
+  <title>Biografias — Memórias das Poetisas da Literatura de Cordel</title>
+  <link rel="icon" href="elementos/estrela.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">M</span>
+        <span class="brand__text">
+          <span class="brand__title">Memórias das Poetisas</span>
+          <span class="brand__descriptor">da Literatura de Cordel</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" data-site-nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="biografias.html" aria-current="page">Biografias</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO DA PÁGINA ================= -->
+    <section class="page-hero">
+      <div class="shell page-hero__inner">
+        <div>
+          <span class="eyebrow">Acervo completo</span>
+          <h1>Biografias</h1>
+        </div>
+        <p>
+          Busque pelo nome ou navegue pelo alfabeto. Cada perfil reúne foto,
+          biografia e as capas dos folhetos publicados.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= CATÁLOGO ================= -->
+    <section class="section">
+      <div class="shell">
+
+        <div class="catalog-tools">
+          <div class="search-field">
+            <label for="busca">Buscar por nome</label>
+            <input type="search" id="busca" data-poetisa-search
+                   placeholder="Ex: Maria das Neves…" autocomplete="off">
+          </div>
+
+          <div>
+            <span class="letter-filter-label" id="rotulo-alfabeto">Filtrar por letra</span>
+            <div class="letter-filter" data-letter-filter role="group" aria-labelledby="rotulo-alfabeto"></div>
+          </div>
+        </div>
+
+        <p class="catalog-status" data-catalog-status aria-live="polite">Carregando acervo…</p>
+
+        <div class="card-grid" data-poetisa-grid>
+          <div class="skeleton-card">
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+          </div>
+          <div class="skeleton-card">
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+            <div class="skeleton-block"></div>
+          </div>
+        </div>
+
+        <div class="state-panel" data-catalog-empty hidden>
+          <h3>Nenhuma poetisa encontrada</h3>
+          <p>Tente outro nome ou limpe o filtro de letras.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= APOIO ================= -->
+    <section class="supporters" aria-labelledby="titulo-apoio">
+      <div class="shell">
+        <div class="supporters__head">
+          <h2 id="titulo-apoio">Apoio e realização</h2>
+          <span class="supporters__badge">Parceiros</span>
+        </div>
+        <div class="supporters__grid">
+          <div class="supporter">
+            <img src="logos/CNPq.png" alt="CNPq" title="Conselho Nacional de Desenvolvimento Científico e Tecnológico">
+          </div>
+          <div class="supporter">
+            <img src="logos/DCI.png" alt="DCI" title="Departamento de Ciência da Informação">
+          </div>
+          <div class="supporter">
+            <img src="logos/PPGCI.png" alt="PPGCI" title="Programa de Pós-Graduação em Ciência da Informação">
+          </div>
+          <div class="supporter">
+            <img src="logos/ACVPB.png" alt="ACVPB" title="Academia de Cordel do Vale do Paraíba">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= MODAL: BIOGRAFIA + CAPAS ================= -->
+  <div class="modal-overlay" data-modal-overlay hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-nome">
+      <div class="modal__head">
+        <h2 id="modal-nome" data-modal-name>Poetisa</h2>
+        <button type="button" class="modal__close" data-modal-close aria-label="Fechar biografia">✕</button>
+      </div>
+      <div class="modal__body" data-modal-body></div>
+    </div>
+  </div>
+
+  <!-- ================= LIGHTBOX: CAPA AMPLIADA ================= -->
+  <div class="modal-overlay lightbox" data-lightbox hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-titulo">
+      <div class="modal__head">
+        <h2 id="lightbox-titulo" data-lightbox-title>Capa</h2>
+        <button type="button" class="modal__close" data-lightbox-close aria-label="Fechar imagem">✕</button>
+      </div>
+      <div class="modal__body">
+        <img data-lightbox-img src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand__title">Memórias das Poetisas</span>
+          <span class="brand__descriptor">da Literatura de Cordel</span>
+          <p>Acervo digital de referência sobre a produção poética feminina
+             na literatura de cordel brasileira.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="biografias.html">Biografias</a>
+          <a href="contato.html">Contato</a>
+          <a href="admin.html">Painel adm</a>
+        </nav>
+      </div>
+
+      <div class="credits">
+        <div class="credits__label">Créditos</div>
+        <div class="credits__list">
+          <a class="credit" href="https://portsamuellmsa.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <strong>Samuel Lucas</strong>
+            <small>Desenvolvimento</small>
+          </a>
+          <a class="credit" href="https://miguel-fernandes-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <strong>Miguel Fernandes</strong>
+            <small>Desenvolvimento</small>
+          </a>
+          <span class="credit credit--highlight">
+            <strong>Jackson</strong>
+            <small>Design, ilustração e tipografia</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> Memórias das Poetisas da Literatura de Cordel. Todos os direitos reservados.</span>
+        <span>Projeto acadêmico da UFPB · PPGCi</span>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="padding:1rem;background:#e0a02b;border-top:3px solid #181410;font-weight:700;text-align:center;">
+      Este acervo precisa de JavaScript ativado para exibir as poetisas.
+    </p>
+  </noscript>
+
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
